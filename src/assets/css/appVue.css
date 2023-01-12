@@ -1,0 +1,54 @@
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+nav.scrolled {
+    background: rgba(17, 17, 17, 0.9);
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    padding: 25px 250px;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    font-family: 'Montserrat';
+    font-size: .9em;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0 0 20px;
+    display: block;
+}
+
+nav a:hover {
+    color: #ededed;
+    border-bottom: 2px solid #fff;
+}
+  
+.logo {
+    padding: 25px 250px;
+    height: 75px;
+    font-family: "Montserrat";
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    float: left;
+}
+
+.logo:before, .logo:after {
+    position: absolute;
+    font-size: 7em;
+    font-weight: 300;
+    line-height: 0;
+    color: #fff;
+    top: 25px;
+}

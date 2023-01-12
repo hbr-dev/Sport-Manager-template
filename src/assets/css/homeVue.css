@@ -1,0 +1,244 @@
+header {
+  background: #111;
+}
+
+.headline {
+  position: relative;
+  height: 950px;
+  color: #fff;
+  text-align: center;
+  background: url("../img/bg_3.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.headline:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  opacity: 0;
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
+          animation: fade-in 0.75s 0.25s ease-in forwards;
+}
+
+.inner h1 {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 4em;
+  line-height: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+  text-align: start;
+}
+
+.inner > p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-size: 1.4em;
+  letter-spacing: 1.5px;
+}
+
+.inner div {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: small;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.inner div button {
+  margin-right: 10px;
+  background-color: #EE1E46;
+  padding: 25px 45px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.inner div button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  transition: background-color .2s ease-in-out;
+}
+
+.inner div button a {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 1px
+}
+
+.inner div p:hover {
+  cursor: pointer;
+  color: rgb(222, 221, 221);
+  transition: color.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ####################################################################################### */
+/* ####################################################################################### */
+.matches {
+  background-color: #1A1E25;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.matches .title {
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 10px solid #EE1E46;
+}
+
+.matches .title h3 { 
+  font-family: 'Montserrat';
+  font-size: larger;
+  color: #fff;
+  font-weight: medium;
+  letter-spacing: 3.5px;
+}
+
+.matches .container {
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.matches .container .matche {
+  background-color: #262930;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.matche .flags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.matche .flags .team1-flag,
+.matche .flags .team2-flag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.matche .flags .team1-flag img,
+.matche .flags .team2-flag img {
+  width: 100px;
+  height: 100px;
+}
+
+.matche .flags .team-name {
+  font-family: 'Montserrat';
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.matche .flags .versus {
+  background-color: #EE1E46;
+  font-family: 'Montserrat';
+  font-size: medium;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.matche .competition{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.matche .competition h3 {
+  font-family: 'Montserrat';
+  color: #EE1E46;
+  font-size: medium;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+.matche .date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.matche .date-time p {
+  font-family: 'Montserrat';
+  color: #79797A;
+  margin-bottom: 10px;
+}
+
+.matche .field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.matche .field p {
+  font-family: 'Montserrat';
+  color: #EE1E46;
+  font-weight: normal;
+}
+
+.matche .book-tiket button a {
+  font-family: 'Montserrat';
+  color: #fff;
+  text-decoration: none;
+}
+
+.matche:hover {
+  cursor: pointer;
+  transform: scale(1.07, 1.07);
+  transition: transform 250ms ease-in-out;
+}
+/* ####################################################################################### */
+/* ####################################################################################### */
